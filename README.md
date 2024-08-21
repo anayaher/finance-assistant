@@ -6,16 +6,16 @@
 
 <h2>Login Screen:</h2>
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc1.png" alt="project-screenshot" width="600" height="1000/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc1.png" alt="project-screenshot" width="500" height="1000/">
 <h2>Home Screen:</h2>
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc2.png" alt="project-screenshot" width="600" height="1000/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc2.png" alt="project-screenshot" width="500" height="1000/">
 <h2>Transaction Screen:</h2>
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc3.png" alt="project-screenshot" width="600" height="1000/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc3.png" alt="project-screenshot" width="500" height="1000/">
 <h2>Report Screen:</h2>
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc4.png" alt="project-screenshot" width="600" height="1000/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc4.png" alt="project-screenshot" width="500" height="1000/">
 
   
   
