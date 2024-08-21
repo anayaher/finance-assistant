@@ -4,13 +4,13 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc1.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc1.png" alt="project-screenshot" width="1000" height="1000/">
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc2.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc2.png" alt="project-screenshot" width="1000" height="1000/">
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc3.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc3.png" alt="project-screenshot" width="1000" height="1000/">
 
-<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc4.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/anayaher/finance-assistant/blob/master/images/sc4.png" alt="project-screenshot" width="1000" height="1000/">
 
   
   
