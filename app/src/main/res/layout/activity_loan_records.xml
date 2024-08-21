@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".bankLoan.LoanRecords"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/EnterDetailTvLoan"
+        android:layout_height="wrap_content"
+
+        android:text="Enter Details"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        >
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loanRecordNameTil"
+        app:boxBackgroundMode="outline"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="75dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        android:hint="Bank Name"
+        app:boxCornerRadiusTopEnd="8dp"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/loanRecordNameTv"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goldRecordDateTil"
+        android:layout_below="@id/loanRecordNameTil"
+        app:boxBackgroundMode="outline"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        android:hint="Amount"
+        app:boxCornerRadiusTopEnd="8dp"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/loanRecordAmountTv"
+            android:inputType="number"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goldRecordTenureTil"
+        android:layout_below="@id/goldRecordDateTil"
+        app:boxBackgroundMode="outline"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        android:hint="Tenure in Months"
+        app:boxCornerRadiusTopEnd="8dp"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/loanRecordTenureTv"
+            android:inputType="number"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:id="@+id/loanRecordROILL"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/goldRecordTenureTil"
+        android:weightSum="100"
+        android:layout_marginTop="25dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+
+
+            app:boxBackgroundMode="outline"
+
+            app:boxStrokeColor="@color/black"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:hint="Rate of Intrest"
+            app:boxCornerRadiusTopEnd="8dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:digits=".0123456789"
+                android:id="@+id/loanRecordROItv"
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+
+
+            app:boxBackgroundMode="outline"
+
+            app:boxStrokeColor="@color/black"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginStart="5dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:hint="Date of Disbursment"
+            app:boxCornerRadiusTopEnd="8dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:id="@+id/loanRecordDateTv"
+
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goldRecordEmiTil"
+        android:layout_below="@id/loanRecordROILL"
+        app:boxBackgroundMode="outline"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        android:hint="Emi Amount"
+        app:boxCornerRadiusTopEnd="8dp"
+
+        >
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:id="@+id/loanRecordEmiTv"
+        android:inputType="number"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"
+        >
+
+    </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loanRecordAccTil"
+        app:boxBackgroundMode="outline"
+        android:layout_below="@id/goldRecordEmiTil"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/black"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        android:hint="Loan Acc No"
+        app:boxCornerRadiusTopEnd="8dp"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/loanRecordAccNoTv"
+            android:inputType="number"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/loanRecordSaveBtn"
+        android:textSize="18sp"
+        app:backgroundTint="@null"
+        android:background="@drawable/payee_btn"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/loanRecordAccTil"
+        android:layout_marginTop="85dp"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+</RelativeLayout>
+</ScrollView>

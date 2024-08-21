@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#320078"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/TitlePaperSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:text="Supervision"
+            android:textColor="@color/white"
+
+
+            android:textSize="16sp"
+
+            android:textStyle="bold">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TitlePaperSetting"
+            android:id="@+id/rupeesignLl"
+
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="₹"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+
+
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:id="@+id/supervisionTotalTv"
+
+                android:paddingStart="10dp"
+                android:text="4500"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/TvrateandSet"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rupeesignLl"
+
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="60"
+                android:text="Date"
+
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="40"
+                android:text="Rate"
+
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/RateAndNoLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TvrateandSet"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="60"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/black"
+
+                app:boxStrokeWidth="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateEdtSupervision"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="40"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/black"
+
+                app:boxStrokeWidth="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/rateEdtSupervision"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:imeOptions="actionDone"
+
+                    android:padding="0dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="18sp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TVtotal"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RateAndNoLL"
+
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@id/TVtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="70"
+                android:text="No of Supervision "
+
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                >
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/EDTtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVtotal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            android:weightSum="100">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_weight="60"
+                app:boxBackgroundColor="@color/white"
+                app:boxBackgroundMode="outline"
+
+
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/black"
+
+                app:boxStrokeWidth="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nosEdtSupervision"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+
+                    android:padding="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addSupervision"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+
+                android:layout_weight="20"
+                android:gravity="center"
+                app:backgroundTint="#59682C"
+                app:icon="@android:drawable/ic_input_add">
+
+            </com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/removeSupervision"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="5dp"
+                android:layout_weight="20"
+
+                android:paddingEnd="15dp"
+                app:backgroundTint="#A3094E"
+                app:icon="@android:drawable/button_onoff_indicator_off">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/supervisionRateLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recylerviewSupervision"
+            android:orientation="vertical"
+
+
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addNewSupervision"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="5dp"
+
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/red_btn"
+
+                android:text="ADD SuperVision"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconGravity="textStart">
+
+
+            </com.google.android.material.button.MaterialButton>
+
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@id/EDTtotal"
+            android:id="@+id/recylerviewSupervision"
+
+            android:layout_height="250dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemSetSubject"
+        android:title="Set Subject">
+
+    </item>
+    <item android:id="@+id/itemSetRates"
+        android:title="Set Rates">
+
+    </item>
+</menu>

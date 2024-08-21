@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+       android:id="@+id/topLl"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:background="#054E44"
+
+       android:orientation="vertical"
+       android:padding="16sp">
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:weightSum="100">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:id="@+id/examNameExambill"
+             android:text="Exam Name"
+             android:textAlignment="viewStart"
+             android:textColor="@color/white"
+             android:textSize="25sp"
+
+               android:layout_weight="50"
+
+             android:textStyle="bold">
+
+         </TextView>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="10"
+           android:textAlignment="viewEnd"
+
+
+             android:textColor="@color/white"
+             android:textSize="25sp"
+             android:text="₹"
+
+             android:textStyle="bold">
+
+         </TextView>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_weight="20"
+             android:id="@+id/mainexamTotalTv"
+             android:textAlignment="viewStart"
+
+
+             android:text="4500"
+             android:textColor="@color/white"
+
+
+             android:textSize="25sp"
+
+
+             android:textStyle="bold">
+
+         </TextView>
+         <TextView
+             android:layout_width="0dp"
+            android:layout_weight="20"
+             android:id="@+id/refreshBtn"
+             android:background="@android:drawable/ic_menu_rotate"
+             android:layout_height="match_parent">
+
+         </TextView>
+      </LinearLayout>
+
+   </LinearLayout>
+   <com.google.android.material.tabs.TabLayout
+       android:layout_width="match_parent"
+      android:layout_below="@id/topLl"
+       android:id="@+id/tabLayoutExam"
+      app:tabTextAppearance="@style/MineCustomTabText"
+      app:tabIndicator="@drawable/tab_2"
+
+       app:tabSelectedTextColor="@color/white"
+       android:background="#74CDC1"
+       android:layout_height="wrap_content">
+
+   </com.google.android.material.tabs.TabLayout>
+   <androidx.viewpager2.widget.ViewPager2
+       android:layout_width="match_parent"
+       android:id="@+id/viewPagerExam"
+       android:layout_height="fill_parent"
+      android:layout_below="@id/tabLayoutExam">
+
+   </androidx.viewpager2.widget.ViewPager2>
+
+
+
+</RelativeLayout>
+

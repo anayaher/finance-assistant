@@ -1,0 +1,150 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repDialRadioGrp"
+        android:text="From Date"
+
+        android:id="@+id/fmDateTv"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:paddingStart="15dp"
+        >
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="25dp"
+        android:paddingStart="5dp"
+        android:id="@+id/fromDateEdt"
+        android:background="@drawable/custom_edt2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/fmDateTv"
+        >
+
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+
+        android:id="@+id/ToDateTv"
+        android:layout_below="@id/fromDateEdt"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:paddingStart="15dp"
+        >
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="25dp"
+        android:paddingStart="5dp"
+        android:id="@+id/toDateEdt"
+        android:background="@drawable/custom_edt2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/ToDateTv"
+        >
+
+    </EditText>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repDialRadioGrp"
+        >
+
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All"
+
+            android:layout_marginStart="15sp"
+            android:id="@+id/allRecordRadioBtn"
+            android:layout_marginTop="35dp"
+
+            android:textSize="18sp">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom"
+
+
+            android:layout_marginStart="15sp"
+            android:id="@+id/customRadioBtn"
+            android:layout_below="@id/allRecordRadioBtn"
+
+
+
+            android:textSize="18sp">
+
+        </RadioButton>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Payee"
+
+        android:id="@+id/selectPayeeTv"
+        android:layout_below="@id/toDateEdt"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:paddingStart="15dp"
+        >
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TILpayeeEdt"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_below="@id/selectPayeeTv">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/payeeEdt"
+            android:layout_height="match_parent">
+
+        </AutoCompleteTextView>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/jkReportSearchBtn"
+        android:layout_below="@id/TILpayeeEdt"
+        android:text="Show"
+        android:textSize="18sp">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</RelativeLayout>

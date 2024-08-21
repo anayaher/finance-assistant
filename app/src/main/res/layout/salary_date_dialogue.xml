@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fromDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From Date" />
+
+    <EditText
+        android:id="@+id/fromDateEditText"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/toDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Date" />
+
+    <EditText
+        android:id="@+id/toDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+</LinearLayout>

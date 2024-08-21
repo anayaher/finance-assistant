@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12sp">
+
+            <TextView
+                android:id="@+id/dpPaysheetMonth"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:text="Month"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetBasic"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Basic"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetDa"
+                android:layout_width="120dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Da"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetHra"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hra"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:background="@drawable/borderback"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetTa"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ta"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetOther"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:text="Other"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetTotalSal"
+                android:layout_width="120dp"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetIt"
+                android:layout_width="120dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="It"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetPt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="pt"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetGpf"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Gpf"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetJanseva"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Janseva"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/borderback"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/dpPaysheetVidyasevak"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Vidya"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:background="@drawable/borderback"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/dpPaysheetOther1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Other1"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/dpPaysheetTotalDed"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Total"
+                android:textColor="@android:color/black"
+                android:background="@drawable/borderback"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpPaysheetPayInHand"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PayInHand"
+                android:textColor="@android:color/black"
+                android:background="@drawable/borderback"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</HorizontalScrollView>

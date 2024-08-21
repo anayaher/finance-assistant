@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:textAlignment="viewStart"
+    tools:context=".BankAccountRecords">
+
+<RelativeLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+
+
+
+  <TextView
+      android:id="@+id/bankMainLL"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="Enter Bank Details"
+      android:textColor="@color/black"
+      android:textSize="22sp"
+      android:textStyle="bold">
+
+  </TextView>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/TILbankName"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/bankMainLL"
+      android:layout_marginTop="20dp"
+
+
+      android:layout_weight="70"
+
+      android:hint="Bank Name"
+      android:padding="0dp"
+      android:textColorHint="@color/black"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+
+
+      app:boxCornerRadiusTopStart="8dp"
+
+
+      app:boxStrokeColor="@color/teal_200"
+
+
+      app:hintTextColor="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/BankNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+
+
+
+
+        android:textAlignment="viewStart"
+
+        android:textColor="#000000"
+
+        android:textSize="18sp"
+
+
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/TILaccountName"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/TILbankName"
+
+
+      android:layout_weight="70"
+
+      android:hint="Account No"
+      android:padding="0dp"
+      android:textColorHint="@color/black"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+
+
+      app:boxCornerRadiusTopStart="8dp"
+
+
+      app:boxStrokeColor="@color/teal_200"
+
+
+      app:hintTextColor="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/BankAccNoTv"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:textAlignment="viewStart"
+
+        android:textColor="#000000"
+
+        android:textSize="18sp"
+
+
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/TILifsc"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/TILaccountName"
+
+
+      android:layout_weight="70"
+
+      android:hint="IFSC Code"
+      android:padding="0dp"
+      android:textColorHint="@color/black"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+
+
+      app:boxCornerRadiusTopStart="8dp"
+
+
+      app:boxStrokeColor="@color/teal_200"
+
+
+      app:hintTextColor="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/BankIfcsTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:textAlignment="viewStart"
+
+        android:textColor="#000000"
+
+        android:textSize="18sp"
+
+
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/CusNoTIL"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/TILifsc"
+
+
+      android:layout_weight="70"
+
+      android:hint="Customer No"
+      android:padding="0dp"
+      android:textColorHint="@color/black"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+
+
+      app:boxCornerRadiusTopStart="8dp"
+
+
+      app:boxStrokeColor="@color/teal_200"
+
+
+      app:hintTextColor="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/BankCusNoTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:textAlignment="viewStart"
+
+        android:textColor="#000000"
+
+        android:textSize="18sp"
+
+
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/TILclosedOn"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/CusNoTIL"
+
+
+      android:layout_weight="70"
+
+      android:hint="Closed On"
+      android:padding="0dp"
+      android:textColorHint="@color/black"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+
+
+      app:boxCornerRadiusTopStart="8dp"
+
+
+      app:boxStrokeColor="@color/teal_200"
+
+
+      app:hintTextColor="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/BankClosedTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:textAlignment="viewStart"
+
+        android:textColor="#000000"
+
+        android:textSize="18sp"
+
+
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/TILworkingTime"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/TILclosedOn"
+
+
+      android:layout_weight="70"
+
+      android:hint="Working Time"
+      android:padding="0dp"
+      android:textColorHint="@color/black"
+      app:boxBackgroundMode="outline"
+      app:boxCornerRadiusBottomEnd="8dp"
+      app:boxCornerRadiusBottomStart="8dp"
+      app:boxCornerRadiusTopEnd="8dp"
+
+
+      app:boxCornerRadiusTopStart="8dp"
+
+
+      app:boxStrokeColor="@color/teal_200"
+
+
+      app:hintTextColor="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:id="@+id/BankWorkTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:textAlignment="viewStart"
+
+        android:textColor="#000000"
+
+        android:textSize="18sp"
+
+
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/TILworkingTime"
+
+      android:layout_marginTop="50dp">
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/BankBackBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginBottom="5dp"
+        android:layout_weight="33"
+        android:background="@drawable/red_btn"
+
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+
+        app:iconGravity="textStart">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/BankSaveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginBottom="5dp"
+        android:layout_weight="33"
+        android:background="@drawable/red_btn"
+
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+
+        app:iconGravity="textStart">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+
+  </LinearLayout>
+</RelativeLayout>
+
+
+
+</ScrollView>

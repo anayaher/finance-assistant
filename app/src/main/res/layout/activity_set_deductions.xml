@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:background="#FF3860"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".salaryactivities.SetDeductionsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Please Enter Your Deductions"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:text="IT"
+            android:gravity="center"
+            android:background="@drawable/borderback"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/setDedItEdt"
+            android:layout_height="match_parent"
+            android:background="@drawable/borderback"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:textColor="@color/black"
+            android:text="PT"
+            android:gravity="center"
+            android:background="@drawable/borderback"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/setDedPtEdt"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@drawable/borderback"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:text="GPF"
+            android:background="@drawable/borderback"
+            android:layout_weight="40"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/setDedGpfEdt"
+            android:inputType="number"
+            android:background="@drawable/borderback"
+            android:gravity="center"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="JANSEVA"
+            android:background="@drawable/borderback"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/setDedJansevaEdt"
+            android:background="@drawable/borderback"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="VIDYASEVAK"
+            android:background="@drawable/borderback"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/setDedVidyaEdt"
+            android:background="@drawable/borderback"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:text="Other"
+            android:background="@drawable/borderback"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/setDedOtherEdt"
+            android:background="@drawable/borderback"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/borderback"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="TOTAL"
+            android:background="@drawable/borderback"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:id="@+id/setDedTotalEdt"
+            android:background="@drawable/borderback"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/setDedUpdateBtn"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_to_red_btn"
+            android:text="Update"
+            android:layout_margin="12dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_to_red_btn"
+            android:id="@+id/setDedSaveBtn"
+            android:layout_weight="50"
+            android:text="Save"
+            android:layout_margin="12dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</LinearLayout>

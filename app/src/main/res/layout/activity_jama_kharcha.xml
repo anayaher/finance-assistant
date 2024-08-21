@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#D1D1D1"
+    android:layout_height="match_parent"
+    tools:context=".JamaKharchaActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#010C4B"
+
+        android:layout_height="0dp"
+        android:layout_weight="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="Balance:"
+            android:textSize="22sp"
+            android:gravity="center_vertical">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:id="@+id/jkBalTv"
+            android:text="12000/-"
+            android:textSize="22sp"
+            android:gravity="center_vertical">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/jamaKharchaRv"
+        android:layout_weight="86">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:id="@+id/jkAddBtn"
+
+        android:layout_margin="20dp"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        android:text="Add Transaction + ">
+
+    </com.google.android.material.button.MaterialButton>
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainYeneDeneActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/mainrelL"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@drawable/mainyenedenetop"
+
+
+        >
+
+        <LinearLayout
+            android:id="@+id/tvLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:weightSum="100"
+
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:text=" Total Yene"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Balance"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:text=" Total Dene"
+                android:textColor="@color/white"
+                android:textSize="14sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLl"
+            >
+
+            <TextView
+                android:id="@+id/YDtotalYenetv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:text="25000"
+
+                android:textColor="@color/white"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/MainBalancetvYD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="bottom|center"
+
+
+                android:text="50000"
+
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/YDtotalDenetv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+
+                android:text="15000"
+                android:textColor="@color/red"
+                android:textSize="16sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mainrelL"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Date"
+
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Head"
+
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Yene"
+
+                android:textColor="#68AAD3"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Dene"
+
+                android:textColor="#E32047"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/YDrv"
+
+                >
+
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:backgroundTint="@null"
+            android:id="@+id/addtransBtn"
+
+
+            android:background="@drawable/custom_btn2"
+
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconTint="@color/white"
+            android:text="Add Transaction"
+
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

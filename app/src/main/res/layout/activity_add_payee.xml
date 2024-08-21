@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_round_background"
+    android:fitsSystemWindows="true"
+    android:layout_margin="18dp"
+    android:orientation="vertical"
+    tools:context=".AddPayeeActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+
+
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+
+        android:text="Add Payee">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+
+        >
+
+        <!-- TextView with White Background and Round Edges -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addPayeeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+
+            android:background="@drawable/white_round_background"
+            android:gravity="center"
+            android:inputType="textCapWords"
+
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/addPayeeBtn"
+        android:gravity="center"
+        android:background="@drawable/dark_green_btn"
+        app:backgroundTint="@null"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:text="Save"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.button.MaterialButton>
+   <ListView
+       android:layout_width="match_parent"
+       android:id="@+id/addPayeeLv"
+       android:layout_margin="20dp"
+       android:layout_height="wrap_content">
+
+   </ListView>
+</LinearLayout>
+

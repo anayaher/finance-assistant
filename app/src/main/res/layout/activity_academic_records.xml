@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:textAlignment="viewStart"
+    tools:context=".BankAccountRecords">
+
+    <TextView
+        android:id="@+id/academicMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter Academic Detail"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/topTIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/academicMain"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+
+
+
+        android:layout_weight="70"
+
+        android:hint="Title Of Programme"
+        android:padding="0dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+
+
+        app:boxCornerRadiusTopStart="8dp"
+
+
+        app:boxStrokeColor="@color/teal_200"
+
+
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AcademicTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:textAlignment="viewStart"
+
+            android:textColor="#000000"
+
+            android:textSize="18sp"
+
+
+            android:textStyle="bold">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTIL"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/topTIL">
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_weight="50"
+
+            android:hint="From Date"
+            android:padding="0dp"
+            android:textColorHint="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            android:layout_marginEnd="10dp"
+
+
+
+            app:boxCornerRadiusTopStart="8dp"
+
+
+            app:boxStrokeColor="@color/teal_200"
+
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/black"
+
+
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+
+                android:layout_width="match_parent"
+                android:id="@+id/AcademicDateFromTv"
+
+                android:layout_height="match_parent"
+
+                android:textAlignment="viewStart"
+
+                android:textColor="#000000"
+
+                android:textSize="18sp"
+
+
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_weight="50"
+
+            android:hint="To Date"
+            android:padding="0dp"
+            android:textColorHint="@color/black"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+
+
+
+            app:boxCornerRadiusTopStart="8dp"
+
+
+            app:boxStrokeColor="@color/teal_200"
+
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/black"
+
+
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+
+                android:layout_width="match_parent"
+                android:id="@+id/AcademicDateTv"
+
+                android:layout_height="match_parent"
+
+                android:textAlignment="viewStart"
+
+                android:textColor="#000000"
+
+                android:textSize="18sp"
+
+
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/venueTIl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTIL"
+
+
+        android:layout_weight="70"
+
+        android:hint="Venue"
+        android:padding="0dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+
+        android:layout_marginBottom="20dp"
+
+
+        app:boxCornerRadiusTopStart="8dp"
+
+
+        app:boxStrokeColor="@color/teal_200"
+
+
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/AcademicVenueTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textAlignment="viewStart"
+
+            android:textColor="#000000"
+
+            android:textSize="18sp"
+
+
+            android:textStyle="bold">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/themeTil"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venueTIl"
+
+
+        android:layout_weight="70"
+
+        android:hint="Theme"
+        android:padding="0dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        android:layout_marginBottom="20dp"
+
+
+        app:boxCornerRadiusTopStart="8dp"
+
+
+        app:boxStrokeColor="@color/teal_200"
+
+
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/AcademicThemeTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textAlignment="viewStart"
+
+            android:textColor="#000000"
+
+            android:textSize="18sp"
+
+
+            android:textStyle="bold">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILdetailsA"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themeTil"
+
+
+        android:layout_weight="70"
+
+        android:hint="Additional Details"
+        android:padding="0dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+
+
+        app:boxCornerRadiusTopStart="8dp"
+
+
+        app:boxStrokeColor="@color/teal_200"
+
+
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/AcademicDetailsTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textAlignment="viewStart"
+
+            android:textColor="#000000"
+
+            android:textSize="18sp"
+
+
+            android:textStyle="bold">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TILdetailsA"
+
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/AcademicBackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_weight="33"
+            android:background="@drawable/red_btn"
+
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@null"
+
+            app:iconGravity="textStart">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/AcademicSaveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_weight="33"
+            android:background="@drawable/red_btn"
+
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@null"
+
+            app:iconGravity="textStart">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

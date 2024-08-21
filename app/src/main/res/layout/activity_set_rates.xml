@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".setRates">
+
+    <LinearLayout
+        android:id="@+id/paperChekingLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Set Paper Checking Rate"
+            android:textColor="@color/black"
+
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12sp"
+            app:boxCornerRadiusBottomStart="12sp"
+            app:boxCornerRadiusTopEnd="12sp"
+            app:boxCornerRadiusTopStart="12sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="0dp"
+                android:imeOptions="actionDone"
+                android:id="@+id/paperCheckingTv"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:textStyle="bold">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paperSettingLL"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paperChekingLl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Set Paper Setting Rate"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12sp"
+            app:boxCornerRadiusBottomStart="12sp"
+            app:boxCornerRadiusTopEnd="12sp"
+            app:boxCornerRadiusTopStart="12sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+               android:imeOptions="actionDone"
+                android:id="@+id/paperSettingTv"
+                android:layout_width="match_parent"
+                android:padding="0dp"
+
+                android:layout_height="35dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:textStyle="bold">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paperSettingLL"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/supervisionLl"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:text="Set Supervision Rate"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="12sp"
+            app:boxCornerRadiusBottomStart="12sp"
+            app:boxCornerRadiusTopEnd="12sp"
+            app:boxCornerRadiusTopStart="12sp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:id="@+id/supervisionRateTv"
+                android:layout_height="35dp"
+                android:padding="0dp"
+
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:textStyle="bold">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/supervisionLl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/saveRateBtn"
+            android:background="@drawable/green_selector"
+            app:backgroundTint="@null"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:layout_weight="50">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Update"
+            android:id="@+id/updateRateBtn"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/green_selector"
+            app:backgroundTint="@null"
+            android:layout_weight="50">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

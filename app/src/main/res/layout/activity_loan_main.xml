@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".bankLoan.LoanMain">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:id="@+id/loanMainTopLL"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:background="#163DA8">
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+
+        android:text="All Loans"
+        android:textSize="26sp"
+
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+
+
+            android:text="$"
+            android:textSize="26sp"
+
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="wrap_content"
+            android:id="@+id/loanMainTotalTv"
+            android:textAlignment="viewStart"
+
+            android:text="1025000"
+            android:textSize="26sp"
+
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/loanMainTopLL"
+        android:weightSum="100"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/recylerviewLoanMain"
+            android:layout_weight="90">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:id="@+id/loanMainAddBtn"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/dark_green_btn"
+                app:backgroundTint="@null"
+                android:text="Add New Loan"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconGravity="textStart">
+
+            </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

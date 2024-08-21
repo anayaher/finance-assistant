@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gold.GoldRecord">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/EnterDetailTv"
+            android:layout_height="wrap_content"
+            android:text="Enter Details"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            >
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goldRecordNameTil"
+            app:boxBackgroundMode="outline"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="85dp"
+            app:boxStrokeColor="@color/black"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:hint="Item Name"
+            app:boxCornerRadiusTopEnd="8dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:id="@+id/goldRecordNameTv"
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goldRecordDateTil"
+            android:layout_below="@id/goldRecordNameTil"
+            app:boxBackgroundMode="outline"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="25dp"
+            app:boxStrokeColor="@color/black"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:hint="Date"
+            app:boxCornerRadiusTopEnd="8dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:id="@+id/goldRecordDateTv"
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:id="@+id/dateWRate"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/goldRecordDateTil"
+            android:weightSum="100"
+            android:layout_marginTop="25dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+
+
+                app:boxBackgroundMode="outline"
+
+                app:boxStrokeColor="@color/black"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:hint="weight in gms"
+                app:boxCornerRadiusTopEnd="8dp"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:digits=".0123456789"
+                    android:id="@+id/goldRecordWIGtv"
+                    android:textColor="@color/black"
+
+                    android:layout_height="wrap_content"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+
+
+                app:boxBackgroundMode="outline"
+
+                app:boxStrokeColor="@color/black"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:hint="Rate"
+                app:boxCornerRadiusTopEnd="8dp"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/goldRecordRateTv"
+                    android:textColor="@color/black"
+
+                    android:layout_height="wrap_content"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+
+
+                app:boxBackgroundMode="outline"
+
+                app:boxStrokeColor="@color/black"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginStart="5dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:hint="Cost"
+                app:boxCornerRadiusTopEnd="8dp"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:id="@+id/costTv"
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="wrap_content"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:id="@+id/goldRecordWeightTil"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/dateWRate"
+            android:weightSum="100"
+            android:layout_marginTop="25dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+
+
+                app:boxBackgroundMode="outline"
+
+                app:boxStrokeColor="@color/black"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:hint="Making Charge"
+                app:boxCornerRadiusTopEnd="8dp"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/goldRecordMakingChargesTv"
+                    android:textColor="@color/black"
+
+                    android:layout_height="wrap_content"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+
+
+                app:boxBackgroundMode="outline"
+
+                app:boxStrokeColor="@color/black"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginStart="5dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:hint="Total Making Charges"
+                app:boxCornerRadiusTopEnd="8dp"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:id="@+id/goldRecordMakingChargesTotal"
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="wrap_content"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+
+
+                app:boxBackgroundMode="outline"
+
+                app:boxStrokeColor="@color/black"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginStart="5dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:hint="Gst"
+                app:boxCornerRadiusTopEnd="8dp"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:inputType="number"
+                    android:id="@+id/goldRecordTotalGst"
+
+                    android:textColor="@color/black"
+
+                    android:layout_height="wrap_content"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goldRecorPriceTil"
+            android:layout_below="@id/goldRecordWeightTil"
+            app:boxBackgroundMode="outline"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="25dp"
+            app:boxStrokeColor="@color/black"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:hint="Total Cost"
+            app:boxCornerRadiusTopEnd="8dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:inputType="number"
+
+                android:id="@+id/goldRecordPriceTv"
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goldRecordJewlerTil"
+            android:layout_below="@id/goldRecorPriceTil"
+            app:boxBackgroundMode="outline"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="25dp"
+            app:boxStrokeColor="@color/black"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            android:hint="Jeweler"
+            app:boxCornerRadiusTopEnd="8dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:id="@+id/goldRecordJewelerTv"
+                android:textColor="@color/black"
+
+                android:layout_height="wrap_content"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goldRecordJewlerTil"
+            android:id="@+id/goldRecordSaveBtn"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="85dp"
+            android:text="Save"
+            android:background="@drawable/yene_dene_tv_bck"
+            app:backgroundTint="@null"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
+
+
+</ScrollView>

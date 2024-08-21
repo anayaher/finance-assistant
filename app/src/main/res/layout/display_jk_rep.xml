@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="12sp"
+
+            android:layout_marginEnd="12sp">
+
+            <TextView
+                android:id="@+id/dpJkSrno"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:text="Sr"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpJkDate"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Date"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpJkIncome"
+                android:layout_width="180dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="Income"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpJkExpense"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Amount"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:background="@drawable/borderback"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpjkPayee"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Payee"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpJkHead"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:text="Head"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dpJkDetails"
+                android:layout_width="280dp"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="Details"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+

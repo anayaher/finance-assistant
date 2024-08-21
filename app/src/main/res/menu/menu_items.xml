@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/setSalaryItem"
+        android:title="Set Salary"
+        >
+
+    </item>
+    <item android:id="@+id/setDeductionItem"
+        android:title="Set Deductions"
+        >
+
+    </item>
+    <item android:id="@+id/addPayeeItem"
+        android:title="Add Payee"
+        >
+
+    </item>
+    <item android:id="@+id/addHeadItem"
+        android:title="Add Head"
+        >
+
+    </item>
+    <item android:id="@+id/changePassItem"
+        android:title="Change PassWord"
+        >
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context=".reportactivities.JkreportActivity">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+
+            android:layout_marginEnd="12sp">
+
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:text="Sr"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Date"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:text="Income"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:text="Expense"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Payee"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:text="Head"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+
+                android:layout_width="280dp"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/repJkRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="70">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="20">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:textSize="22sp"
+                android:text="Total Income"
+                android:layout_weight="50">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="22sp"
+                android:text="Total Expense"
+                android:gravity="center"
+                android:background="@drawable/borderback"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/totalIncomeJkRep"
+                android:textSize="22sp"
+                android:background="@drawable/borderback"
+
+                android:text="250000"
+                android:textColor="@color/green"
+                android:layout_weight="50">
+
+            </TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="22sp"
+                android:text="125000"
+                android:id="@+id/totalExpenseJkRep"
+                android:textColor="@color/red"
+                android:background="@drawable/borderback"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Create Pdf"
+            android:textSize="22sp"
+            android:backgroundTintMode="@null"
+            android:id="@+id/repJkCreatePdfBtn"
+            android:background="@drawable/blue_to_red_btn">
+
+        </Button>
+
+
+</LinearLayout>
+</LinearLayout>

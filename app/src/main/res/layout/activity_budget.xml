@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:background="@drawable/round_blue_bck"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="BUDGET">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#4CAF50"
+                android:gravity="center"
+                android:text="Source"
+                android:textColor="@color/white"
+
+                android:textSize="22sp">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#F44336"
+                android:gravity="center"
+                android:text="Expense"
+
+                android:textColor="@color/white"
+
+                android:textSize="22sp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+
+            android:weightSum="100">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/budgetSourceRv"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+
+                android:background="@drawable/borderback"
+
+
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/budgetExpenseRv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+
+                android:background="@drawable/borderback"
+
+
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+
+            <TextView
+                android:id="@+id/budgetIncomeTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#4CAF50"
+                android:gravity="end"
+
+                android:paddingEnd="4dp"
+                android:text="125000"
+                android:textColor="@color/white"
+
+                android:textSize="22sp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/budgetExpenseTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#F44336"
+                android:gravity="end"
+
+                android:paddingEnd="4dp"
+                android:text="50000"
+                android:textColor="@color/white"
+
+                android:textSize="22sp">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+
+            <TextView
+                android:id="@+id/budgetBalanceTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:background="@drawable/borderback"
+
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blue_to_red_btn"
+            android:text="Add+"
+
+
+            android:textSize="22sp"
+            app:backgroundTint="@null"
+            app:backgroundTintMode="@null">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

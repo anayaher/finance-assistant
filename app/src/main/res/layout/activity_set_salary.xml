@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="#4CAF50"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Please Enter Your Salary Allowances"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="100"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:text="BASIC"
+        android:gravity="center"
+        android:background="@drawable/borderback"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="match_parent">
+
+
+    </TextView>
+    <EditText
+        android:layout_width="0dp"
+        android:id="@+id/setSalBasicEdt"
+        android:layout_height="match_parent"
+        android:background="@drawable/borderback"
+
+        android:layout_weight="60"
+        android:textSize="16sp"
+        android:inputType="number"
+
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black">
+
+    </EditText>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:textColor="@color/black"
+            android:text="DA%"
+            android:gravity="center"
+            android:background="@drawable/borderback"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/setSalDaEdt"
+            android:gravity="center"
+            android:maxLength="2"
+            android:inputType="number"
+            android:background="@drawable/borderback"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="100"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:text="HRA%"
+        android:background="@drawable/borderback"
+        android:layout_weight="40"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="match_parent">
+
+
+    </TextView>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/setSalHraEdt"
+        android:maxLength="2"
+        android:inputType="number"
+        android:background="@drawable/borderback"
+        android:gravity="center"
+        android:layout_weight="60"
+        android:textSize="16sp"
+        android:textColor="@color/black">
+
+    </EditText>
+
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    android:weightSum="100"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:text="TA"
+        android:background="@drawable/borderback"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="match_parent">
+
+
+    </TextView>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/setSalTaEdt"
+        android:background="@drawable/borderback"
+        android:layout_weight="60"
+        android:textSize="16sp"
+        android:textColor="@color/black">
+
+    </EditText>
+
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="100"
+    android:orientation="horizontal"
+
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:text="OTHER"
+        android:background="@drawable/borderback"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_height="match_parent">
+
+
+    </TextView>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/setSalOtherEdt"
+        android:background="@drawable/borderback"
+        android:textSize="16sp"
+        android:textColor="@color/black">
+
+    </EditText>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/borderback"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="TOTAL"
+            android:background="@drawable/borderback"
+            android:textSize="16sp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+        <EditText
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:id="@+id/setSalTotalEdt"
+            android:background="@drawable/borderback"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:textSize="16sp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:id="@+id/setSalUpdateBtn"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_to_red_btn"
+            android:text="Update"
+            android:layout_margin="12dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_to_red_btn"
+            android:id="@+id/setSalSaveBtn"
+            android:layout_weight="50"
+            android:text="Save"
+            android:layout_margin="12dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:backgroundTint="@null"
+            android:id="@+id/salSlipIncBtn"
+            android:background="@drawable/blue_to_red_btn"
+
+            android:layout_weight="50"
+            android:text="Incerement"
+            android:layout_margin="12dp"
+            >
+
+        </com.google.android.material.button.MaterialButton>
+
+        <TextView
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:enabled="false"
+            android:id="@+id/salSlipIncTv"
+            android:background="@drawable/borderback"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:textSize="16sp"
+            android:layout_margin="12dp"
+            android:textColor="@color/black">
+
+
+        </TextView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:padding="16dp"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:id="@+id/ExamTotalLl"
+
+        android:background="@drawable/bankkhate"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:id="@+id/examMainLinearLayout"
+
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/examNameMaintv"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingStart="5dp"
+                    android:textColor="#042A93"
+                    android:text="Examination">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title"
+                android:layout_weight="100"
+
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/billTv"
+                    android:layout_height="40dp"
+                    android:layout_weight="30"
+                    android:text="Bill"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:text="₹"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/examAmountMainTv"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="60"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/DeleteLl"
+            android:gravity="center"
+
+            android:layout_weight="20"
+
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:drawable/ic_delete">
+
+            </ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

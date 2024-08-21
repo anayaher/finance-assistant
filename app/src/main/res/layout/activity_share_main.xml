@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue"
+        android:text="All Patpedhi"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:paddingStart="12sp"
+        android:gravity="center_vertical">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/shareMainRv"
+
+            android:layout_height="0dp"
+            android:layout_weight="95">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTintMode="@null"
+            android:backgroundTint="@null"
+            android:id="@+id/shareMainAdd"
+
+
+            android:background="@drawable/blue_to_red_btn"
+
+            android:text="Add+">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

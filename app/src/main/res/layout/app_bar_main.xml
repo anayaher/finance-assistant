@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E4D094"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bankkhate"
+            app:title="BSA"
+            app:titleTextColor="#0B0A0B">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tbExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/blue_to_red_btn"
+                android:text="EXIT"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#E4D094"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+
+
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/jamakharch"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text="ixkj"
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/thinborder"
+
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Salary"
+                                    android:textColor="#0451CC"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/mainsal"
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#0454D5"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Deduction"
+                                    android:textColor="#D50000"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/mainTotalDed"
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#ED0A50"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:paddingStart="8dp"
+
+                                    android:text="Balance"
+                                    android:textColor="#01060E"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/maintotal"
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#01060E"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/InOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/payment"
+
+                    android:layout_marginTop="17dp"
+
+                    android:layout_marginBottom="10dp"
+
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pagarTxt"
+                            android:background="@drawable/cardvwpayment"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text="tek &amp; [kpZ"
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/thinborder"
+
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Income"
+                                    android:textColor="#0451CC"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/jama"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Income"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#0454D5"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Expense"
+                                    android:textColor="#D50000"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/kharch"
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Expense"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#ED0A50"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:paddingStart="8dp"
+
+                                    android:text="Balance"
+                                    android:textColor="#01060E"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/shillak"
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Balance"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#01060E"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/deneghene"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/InOut"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    app:cardCornerRadius="8dp"
+
+
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/yenedenebackgd"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text="ns.ks &amp; ?ks.ks "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/thinborder"
+
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:fontFamily="@font/kt10"
+                                    android:paddingStart="8dp"
+
+                                    android:text="z?ks.ks"
+                                    android:textColor="#0451CC"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:id="@+id/MainLendtv"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#0454D5"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:fontFamily="@font/kt10"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="ns.ks"
+                                    android:textColor="#D50000"
+                                    android:textSize="35dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/MainBorrow"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#ED0A50"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:paddingStart="8dp"
+
+                                    android:text="Balance"
+                                    android:textColor="#01060E"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/MainTotalYD"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#01060E"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/budgetCardView"
+                    android:layout_below="@id/deneghene"
+                    app:cardBackgroundColor="#BAB5D5"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+
+
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/bankkhate"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" ctsV "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/thinborder"
+
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Source"
+                                    android:textColor="#0451CC"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/budIncome"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#0454D5"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Expense"
+                                    android:textColor="#D50000"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/budExpense"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#ED0A50"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:paddingStart="8dp"
+
+                                    android:text="Balance"
+                                    android:textColor="#01060E"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/budBalance"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#01060E"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/thinborder"
+
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="33"
+
+                            android:weightSum="100">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/share"
+
+                    android:layout_below="@id/budgetCardView"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#B3E6E1"
+
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/shares"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" cpr "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/thinborder"
+
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+
+                                    android:layout_weight="40"
+                                    android:background="@drawable/arrow_bck"
+                                    android:fontFamily="@font/kt10"
+
+
+                                    android:paddingStart="8dp"
+                                    android:text="lksus "
+                                    android:textColor="#0451CC"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:id="@+id/sharesBankTv"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text=""
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#0454D5"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:fontFamily="@font/kt10"
+
+
+                                    android:paddingStart="8dp"
+                                    android:text="'ksvlZ"
+                                    android:textColor="#D50000"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/sharesPatTv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="60"
+
+
+                                    android:background="@drawable/thinborder"
+
+                                    android:paddingStart="8dp"
+                                    android:text="patpedhi"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#ED0A50"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:paddingStart="8dp"
+
+                                    android:text="Total"
+                                    android:textColor="#01060E"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/sharesTotalTv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="60"
+
+
+                                    android:background="@drawable/thinborder"
+
+                                    android:paddingStart="8dp"
+                                    android:text="total"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#01060E"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/thinborder"
+
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="33"
+
+                            android:weightSum="100">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/loanCard"
+                    android:layout_below="@id/share"
+                    app:cardBackgroundColor="#BAB5D5"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+
+
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/karj"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" dtZ "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="4dp"
+
+                            android:background="@drawable/thinborder"
+
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Bank Loans"
+                                    android:textColor="#0451CC"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/bankLoanMainTotal"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#0454D5"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+                                    android:background="@drawable/arrow_bck"
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="Gold Loan"
+                                    android:textColor="#D50000"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+                                    android:id="@+id/MainGoldLaonTotal"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#ED0A50"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="33"
+                                android:weightSum="100">
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="40"
+
+
+                                    android:background="@drawable/arrow_bck"
+                                    android:paddingStart="8dp"
+
+                                    android:text="Total"
+                                    android:textColor="#01060E"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:id="@+id/MainTotalLoanAmtTv"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="60"
+
+                                    android:background="@drawable/thinborder"
+
+
+                                    android:paddingStart="8dp"
+
+                                    android:text="0"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="#01060E"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/thinborder"
+
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="33"
+
+                            android:weightSum="100">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/record"
+
+                    android:layout_below="@id/loanCard"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#B3E6E1"
+
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/thinborder"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/records"
+                            android:layout_width="match_parent"
+                            android:id="@+id/recordbtn"
+
+                            android:layout_height="99dp"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" jsdkWMZ "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/report"
+
+                    android:layout_below="@id/record"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#B3E6E1"
+
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#ffffff"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/reports"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" jhiksVZ "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/thinborder"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/reports"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="99dp"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" jhiksZV "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/blank"
+
+                    android:layout_below="@id/report"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#E4D094"
+
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#E4D094"
+
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:background="@drawable/reports"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/kt10"
+                            android:gravity="center"
+                            android:text=" jhiksVZ "
+
+                            android:textColor="#01060E"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#E4D094"
+
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+
+
+                            android:layout_width="match_parent"
+                            android:background="@drawable/blue_to_red_btn"
+
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:id="@+id/mainpageExit"
+
+                            android:text="Exit"
+                            android:textColor="#F4F5F8"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+</RelativeLayout>

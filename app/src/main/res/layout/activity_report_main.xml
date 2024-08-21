@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".reportactivities.ReportMainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salary Report"
+        android:id="@+id/reportMainSalbtn"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+
+        android:textSize="22dp"
+        android:background="@drawable/blue_to_red_btn"
+
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JamaKharch Report"
+        android:id="@+id/reportMainJkBtn"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+
+        android:textSize="22dp"
+        android:background="@drawable/blue_to_red_btn"
+
+        >
+
+    </com.google.android.material.button.MaterialButton>
+</LinearLayout>

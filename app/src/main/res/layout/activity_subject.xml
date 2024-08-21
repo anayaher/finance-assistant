@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#060930"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/subTxtvw"
+        android:layout_width="134dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+
+
+        android:layout_marginTop="80dp"
+
+        android:text="Enter Subject"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/idSubjectTv"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/subTxtvw"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_edt"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPLQRSTUVXYZ "
+        android:gravity="center"
+
+        android:textColor="@color/black"
+        android:textSize="25dp">
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/idSubjectTv"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveSubjectBtn"
+            android:layout_width="150dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+
+            android:layout_below="@id/idSubjectTv"
+
+
+            android:text="Save Subject">
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout">
+
+        <ListView
+            android:id="@+id/recylerviewSubject"
+            android:layout_width="match_parent"
+
+
+
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

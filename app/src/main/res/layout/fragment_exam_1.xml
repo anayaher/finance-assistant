@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="15sp"
+
+
+        android:layout_marginBottom="15sp"
+        android:background="#0C3CBF"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Paper-Setting"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="₹"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+
+
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:id="@+id/papersettingTotal"
+
+                android:paddingStart="10dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Subject"
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="31"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Date"
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="NOS"
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:background="@drawable/yene_dene_tv_bck"
+                android:gravity="center"
+
+                android:text="Rate"
+
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recylerviewPaperSetting"
+            android:layout_height="400dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addNewPaperSetting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_weight="33"
+            android:background="@drawable/red_btn"
+
+            android:text="ADD Paper-Setting"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@null"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconGravity="textStart">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

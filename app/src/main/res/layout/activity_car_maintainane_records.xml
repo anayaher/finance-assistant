@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    tools:context=".CarMaintainaneRecords">
+
+    <TextView
+        android:id="@+id/MaintainanceTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22A0ED"
+
+        android:gravity="center"
+        android:text="Enter Maintainance Details"
+        android:textColor="#0D47A1"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="25sp"
+        app:boxBackgroundColor="#F4F2F2"
+        android:layout_marginEnd="25sp"
+        android:id="@+id/MaintainanceFirstTIl"
+        android:layout_below="@+id/MaintainanceTv"
+
+
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        app:boxCollapsedPaddingTop="0dp"
+
+
+        android:outlineAmbientShadowColor="@color/black"
+        app:boxCornerRadiusBottomStart="15sp"
+        app:boxCornerRadiusBottomEnd="15sp"
+        app:boxCornerRadiusTopStart="15sp"
+        app:boxCornerRadiusTopEnd="15sp"
+        android:hint="Maintainenane Type"
+        android:padding="0dp"
+
+
+
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CarMaintainanceTypeTv"
+
+
+            android:textColor="#000000">
+
+        </AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:weightSum="100"
+       android:orientation="horizontal"
+      android:id="@+id/MaintainanceSecondTIl"
+       android:layout_below="@id/MaintainanceFirstTIl"
+       android:layout_height="wrap_content"   android:layout_marginTop="20dp"
+       android:layout_marginStart="25sp"
+
+       android:layout_marginEnd="25sp"
+       >
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="0dp"
+           android:layout_weight="50"
+           android:layout_marginEnd="8dp"
+           app:boxBackgroundColor="#F4F2F2"
+
+
+           android:layout_below="@+id/MaintainanceFirstTIl"
+
+
+           app:boxBackgroundMode="outline"
+           app:boxStrokeColor="@color/black"
+           app:hintTextColor="@color/black"
+           android:textColorHint="@color/black"
+           app:boxCollapsedPaddingTop="0dp"
+
+
+           android:outlineAmbientShadowColor="@color/black"
+           app:boxCornerRadiusBottomStart="15sp"
+           app:boxCornerRadiusBottomEnd="15sp"
+           app:boxCornerRadiusTopStart="15sp"
+           app:boxCornerRadiusTopEnd="15sp"
+           android:hint="Date"
+           android:padding="0dp"
+
+
+
+           android:layout_height="wrap_content"
+           >
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:id="@+id/CarMaintainanceDateTV"
+               android:layout_height="wrap_content"
+android:textSize="14sp"
+
+               android:textColor="#000000">
+
+           </com.google.android.material.textfield.TextInputEditText>
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="0dp"
+           android:layout_weight="50"
+           app:boxBackgroundColor="#F4F2F2"
+
+
+           android:layout_below="@+id/MaintainanceFirstTIl"
+
+
+           app:boxBackgroundMode="outline"
+           android:layout_marginStart="8dp"
+           app:boxStrokeColor="@color/black"
+           app:hintTextColor="@color/black"
+           android:textColorHint="@color/black"
+           app:boxCollapsedPaddingTop="0dp"
+
+
+           android:outlineAmbientShadowColor="@color/black"
+           app:boxCornerRadiusBottomStart="15sp"
+           app:boxCornerRadiusBottomEnd="15sp"
+           app:boxCornerRadiusTopStart="15sp"
+           app:boxCornerRadiusTopEnd="15sp"
+           android:hint="Cost"
+           android:padding="0dp"
+
+
+
+           android:layout_height="wrap_content"
+           >
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/CarMainainanceCostTv"
+
+
+               android:textColor="#000000">
+
+           </com.google.android.material.textfield.TextInputEditText>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+   </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25sp"
+        app:boxBackgroundColor="#F4F2F2"
+        android:layout_marginEnd="25sp"
+        android:id="@+id/MaintainanceTvthird"
+        android:layout_below="@+id/MaintainanceSecondTIl"
+
+
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        app:boxCollapsedPaddingTop="0dp"
+
+
+        android:outlineAmbientShadowColor="@color/black"
+        app:boxCornerRadiusBottomStart="15sp"
+        app:boxCornerRadiusBottomEnd="15sp"
+        app:boxCornerRadiusTopStart="15sp"
+        app:boxCornerRadiusTopEnd="15sp"
+        android:hint="Workshop Detail"
+        android:padding="0dp"
+
+
+
+        android:layout_height="wrap_content"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/CarMaintainanceWorkshopTv"
+            android:layout_height="wrap_content"
+
+
+            android:textColor="#000000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/MaintainanceFourthTIl"
+        android:layout_marginStart="25sp"
+        app:boxBackgroundColor="#F4F2F2"
+        android:layout_marginEnd="25sp"
+
+        android:layout_below="@+id/MaintainanceTvthird"
+
+
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        app:boxCollapsedPaddingTop="0dp"
+
+
+        android:outlineAmbientShadowColor="@color/black"
+        app:boxCornerRadiusBottomStart="15sp"
+        app:boxCornerRadiusBottomEnd="15sp"
+        app:boxCornerRadiusTopStart="15sp"
+        app:boxCornerRadiusTopEnd="15sp"
+        android:hint="Other Detail"
+        android:padding="0dp"
+
+
+
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CarMaintainanceDetailTv"
+
+
+            android:textColor="#000000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CarMaintainanceSaveBtn"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MaintainanceFourthTIl"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/blue_to_red_btn"
+        android:text="Save">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bankRecordMain">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#5D1381"
+        android:padding="5dp"
+        android:id="@+id/myCarMaintainanceLL"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Maintainance Record"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/white">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/myCarMaintainanceLL"
+        android:orientation="vertical"
+
+        android:layout_height="fill_parent"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="90"
+            android:layout_height="0dp"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recylerviewCarMain"
+                android:layout_height="match_parent"
+                android:background="#3E4863"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:background="#FAFAFA"
+            android:layout_height="0dp">
+            <com.google.android.material.button.MaterialButton
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/addCarMaintainanceBtn"
+
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_weight="33"
+                android:background="@drawable/btn2_exm"
+
+                android:text="Add Car Maintainance "
+                app:icon="@android:drawable/ic_input_add"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+
+                app:iconGravity="textStart">
+
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="4dp"
+    tools:context=".salaryactivities.SalSlipActivity">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/paysheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="B S AHER"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/paysheetDateLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paysheetTitle"
+        android:layout_marginBottom="12sp"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <EditText
+            android:id="@+id/paysheetMonthEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:enabled="false"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/psDateEdt"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="50"
+            android:gravity="center"
+            android:hint="Enter Date"
+            android:inputType="none"
+
+            android:textColor="#0437C3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paysheetSALDED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/paysheetDateLL"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@drawable/borderback"
+            android:gravity="center"
+            android:text="ALLOWANCES"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@drawable/borderback"
+            android:gravity="center"
+            android:text="DEDUCTIONS"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paysheetSalMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paysheetSALDED"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="50"
+
+            android:background="@drawable/borderback"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="BASIC"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/paysheetBasic"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="DA"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetDa"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="HRA"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetHra"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="TA"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetTa"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text=" Other"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/paysheetOtherSal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:numeric="integer"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#0555F4"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_weight="50"
+            android:background="@drawable/borderback"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="IT"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetIt"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="4dp"
+                    android:text="PT"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetPt"
+                    android:background="@drawable/borderback"
+                    android:gravity="clip_vertical|end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#FF0000"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="GPF"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetGpf"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="JANSE"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/paysheetJanseva"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/borderback"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="VIDYAS"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="end"
+                    android:id="@+id/paysheetVidya"
+                    android:paddingEnd="4dp"
+                    android:background="@drawable/borderback"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="start"
+                    android:paddingStart="4dp"
+                    android:text="Other"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/borderback"
+                    android:gravity="end"
+                    android:id="@+id/paysheetOther1"
+                    android:inputType="number"
+
+                    android:paddingEnd="4dp"
+                    android:text="0"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </EditText>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paysheetSalMain"
+        android:id="@+id/paysheetTotals"
+
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/borderback"
+            android:text="TOTAL "
+            android:textAlignment="center"
+            android:textColor="#0555F4"
+            android:textSize="16sp"
+
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:id="@+id/paysheetTotalSalHead"
+            android:layout_weight="25"
+            android:background="@drawable/borderback"
+            android:paddingEnd="4dp"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:textColor="#0555F4"
+            android:textSize="16sp"
+
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_weight="25"
+            android:background="@drawable/borderback"
+            android:text="TOTAL"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+
+
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:id="@+id/paysheetTotalDedHead"
+            android:background="@drawable/borderback"
+            android:paddingEnd="4dp"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+
+
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/paysheetPayInHandLL"
+        android:layout_below="@id/paysheetTotals"
+
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/borderback"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="Pay In Hand"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:id="@+id/paysheetPayInHand"
+
+            android:background="@drawable/borderback"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="0"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/paysheetSaveBtn"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="@null"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+        android:layout_below="@id/paysheetPayInHandLL"
+        android:textSize="22dp"
+        android:background="@drawable/blue_to_red_btn"
+
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>
